@@ -46,4 +46,4 @@ footer{background:#ddd;text-align:center;padding:15px;font-size:14px}
 <script>
 document.getElementById("quiz").addEventListener("submit",function(event){event.preventDefault();var score=0;var questions=["q1","q2","q3"];for(var i=0;i<questions.length;i++){var answer=document.querySelector('input[name="'+questions[i]+'"]:checked');if(!answer){document.getElementById("result").textContent="Пожалуйста, ответьте на все вопросы.";return;}score+=Number(answer.value);}document.getElementById("result").textContent="Ваш результат: "+score+" из 3.";});
 </script>
-</body></html>
+</body></html> 
