@@ -22,7 +22,7 @@ footer{background:#ddd;text-align:center;padding:15px;font-size:14px}
 </style>
 </head>
 <body>
-<header><h1>Изучение принципов работы Wi-Fi</h1><p>Курсовая работа по компьютерным сетям</p></header>
+<header><h1>Изучение принципов работы Wi-Fi</h1></header>
 <nav><a href="#about">Что такое Wi-Fi</a><a href="#work">Как работает</a><a href="#standards">Стандарты</a><a href="#security">Безопасность</a><a href="#test">Тест</a></nav>
 <main>
 <section id="about"><h2>1. Что такое Wi-Fi?</h2>
@@ -41,8 +41,7 @@ footer{background:#ddd;text-align:center;padding:15px;font-size:14px}
 <div class="question"><p><b>2. Для чего нужен пароль Wi-Fi?</b></p><label><input type="radio" name="q2" value="1"> Для ограничения доступа к сети</label><br><label><input type="radio" name="q2" value="0"> Для увеличения размера экрана</label><br><label><input type="radio" name="q2" value="0"> Для ускорения компьютера</label></div>
 <div class="question"><p><b>3. Что может ослабить сигнал Wi-Fi?</b></p><label><input type="radio" name="q3" value="1"> Стены и помехи</label><br><label><input type="radio" name="q3" value="0"> Название сети</label><br><label><input type="radio" name="q3" value="0"> Цвет роутера</label></div>
 <button type="submit">Проверить ответы</button><div id="result"></div></form></section>
-<section id="sources"><h2>6. Полезные источники</h2><ul><li><a href="https://www.wi-fi.org/" target="_blank" rel="noopener">Официальный сайт Wi-Fi Alliance</a></li><li><a href="https://standards.ieee.org/" target="_blank" rel="noopener">Организация IEEE и стандарты связи</a></li></ul><p>Материал подготовлен в учебных целях. Для курсовой работы следует дополнить его литературой, рекомендованной преподавателем.</p></section>
-</main><footer><p>Учебный сайт «Изучение принципов работы Wi-Fi» · 2026</p></footer>
+<section id="sources"><h2>6. Полезные источники</h2><ul><li><a href="https://www.wi-fi.org/" target="_blank" rel="noopener">Официальный сайт Wi-Fi Alliance</a></li><li><a href="https://standards.ieee.org/" target="_blank" rel="noopener">Организация IEEE и стандарты связи</a></li></ul>
 <script>
 document.getElementById("quiz").addEventListener("submit",function(event){event.preventDefault();var score=0;var questions=["q1","q2","q3"];for(var i=0;i<questions.length;i++){var answer=document.querySelector('input[name="'+questions[i]+'"]:checked');if(!answer){document.getElementById("result").textContent="Пожалуйста, ответьте на все вопросы.";return;}score+=Number(answer.value);}document.getElementById("result").textContent="Ваш результат: "+score+" из 3.";});
 </script>
